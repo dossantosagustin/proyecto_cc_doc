@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Proyecto_CC" company="" webLink="http://" view-date="2026-05-18" view-index="0" gantt-divider-location="351" resource-divider-location="300" version="3.3.3316" locale="es_ES">
+    <description/>
+    <view zooming-state="default:0" id="gantt-chart">
+        <field id="tpd3" name="Nombre" width="200" order="0"/>
+        <field id="tpd4" name="Fecha de inicio" width="75" order="1"/>
+        <field id="tpd5" name="Fecha de fin" width="75" order="2"/>
+        <field id="tpd15" name="Notas" width="20" order="3"/>
+        <option id="filter.completedTasks" value="false"/>
+        <option id="filter.dueTodayTasks" value="false"/>
+        <option id="filter.overdueTasks" value="false"/>
+        <option id="filter.inProgressTodayTasks" value="false"/>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Nombre" width="210" order="0"/>
+        <field id="1" name="Función" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" uid="4e72861846d04b108388749464e29080" name="Análisis" meeting="false" start="2026-05-22" duration="30" complete="0" expand="true">
+            <task id="5" uid="003000f3f18646828c19d4a7a51a3f91" name="Caso de uso" meeting="false" start="2026-05-22" duration="15" complete="0" expand="true">
+                <depend id="1" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="1" uid="adf8f0d4bf264127aff79eceb35eb947" name="Investigación" meeting="false" start="2026-06-12" duration="5" complete="0" expand="true">
+                <notes><![CDATA[Definir qué datos son obligatorios]]></notes>
+                <depend id="2" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="2" uid="0e560a4b369c4c33ae852861fa3e68f5" name="Definición de usuarios y permisos" meeting="false" start="2026-06-19" duration="5" complete="0" expand="true">
+                <notes><![CDATA[Diferenciar qué ve el público general y qué ve el administrador del centro]]></notes>
+                <depend id="3" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="3" uid="7a56e68423f048439dd51e8c3262b988" name="Definición de lenguajes" meeting="false" start="2026-06-26" duration="5" complete="0" expand="true">
+                <notes><![CDATA[Decisión sobre el lenguaje de programación, base de datos y servidor]]></notes>
+            </task>
+        </task>
+        <task id="6" uid="cfa26f022bdb4bf2a600da16737e91d5" name="Diseño" meeting="false" start="2026-07-03" duration="90" complete="0" expand="true">
+            <task id="7" uid="3179dbb7f77e4b0486f8b52e69c60fd7" name="Estructura visual formulario" meeting="false" start="2026-07-03" duration="10" complete="0" expand="true">
+                <notes><![CDATA[Estructura visual del formulario de petición]]></notes>
+                <depend id="8" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="8" uid="9e300a114b6c484ea4b676649b47a705" name="Estructura visual panel control" meeting="false" start="2026-07-17" duration="10" complete="0" expand="true">
+                <notes><![CDATA[Se desarrolla un conjunto de normas visuales que garantizarán la coherencia estética de toda la plataforma. Se seleccionan colores institucionales, tipografías, estilos de botones, formularios, iconos y otros elementos gráficos. Esta guía servirá como referencia para mantener una identidad visual uniforme durante el desarrollo.
+]]></notes>
+                <depend id="9" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="9" uid="d5f98f991ace4b1c924cb742097d7738" name="Diseño final de interfaces" meeting="false" start="2026-07-31" duration="15" complete="0" expand="true">
+                <notes><![CDATA[Una vez aprobada la estructura general, se desarrollan los diseños visuales definitivos de todas las pantallas. Se incorporan los colores, tipografías, imágenes y elementos gráficos definidos previamente. El resultado es una representación completa de cómo se verá la plataforma una vez desarrollada.]]></notes>
+                <depend id="11" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="11" uid="4f62a84d95bb482381164b8b9b1d1628" name="Config. entorno y BD" meeting="false" start="2026-08-21" duration="20" complete="0" expand="true">
+                <notes><![CDATA[en esta etapa empezariamos con la idea de la base de daos definiendo tablas y que informacion iria en cada una y como se relacionarian entre ellas]]></notes>
+                <depend id="12" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="12" uid="9544aa000a4349fdbba2208418f681d3" name="Desarrollo Backend" meeting="false" start="2026-09-18" duration="20" complete="0" expand="true">
+                <notes><![CDATA[en esta etapa desarrolariamos todo lo que viene a ser la base de datos para que se puedan almacenar recibir y clasificar los formularios de buena manera]]></notes>
+                <depend id="13" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="13" uid="2e8dd6bcf6354b2f934ebea71e50250b" name="Desarrollo Frontend" meeting="false" start="2026-10-16" duration="15" complete="0" expand="true">
+                <notes><![CDATA[se programan las pantallas que utilizaran las los usuarios finales,tambien se conectan los formularios y componentes visuales con los servicios del backend
+para permitir la interaccion en tiempo real ]]></notes>
+            </task>
+        </task>
+        <task id="10" uid="825ef395295c4b23a5f84c09e90f4860" name="Implementación" meeting="false" start="2026-11-06" duration="16" complete="0" expand="true">
+            <task id="14" uid="1a06dcd33f524002b93284cb313ad9a9" name="Testing y debugging" meeting="false" start="2026-11-06" duration="10" complete="0" expand="true">
+                <notes><![CDATA[pondriamos a prueba el programa para evitar errores y definir algunos detalles de el sistema]]></notes>
+                <depend id="15" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="15" uid="b1a5f476e49c42498c139a70ca68587a" name="Lanzamiento" meeting="false" start="2026-11-20" duration="6" complete="0" expand="true">
+                <notes><![CDATA[aqui finalizaria nuestro proyecto poniendo a disposicion un sistema al cliente ya terminado y sin errores
+]]></notes>
+            </task>
+        </task>
+    </tasks>
+    <resources/>
+    <allocations/>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+</project>
